@@ -2,6 +2,7 @@ version: '3.8'
 services:
   uv-front:
     image: liderbackend/uv_front:4.0.9
+    restart: always
     env_file:
       - .env_si
     ports:
@@ -10,6 +11,7 @@ services:
       - 'tumlab.local:192.168.4.1'
   uv-backend:
     image: liderbackend/uv_backend:3.0.6
+    restart: always
     env_file:
       - .env_api
     extra_hosts:
@@ -21,6 +23,7 @@ services:
       - uv-network
   uv-sync:
     image: liderbackend/uv_sync:2.0.4
+    restart: always
     env_file:
       - .env_sync
     extra_hosts:
@@ -33,6 +36,7 @@ services:
   minio:
     image: minio/minio:latest
     container_name: uv_minio
+    restart: always
     environment:
       - MINIO_ACCESS_KEY=root
       - MINIO_SECRET_KEY=12345Az!
