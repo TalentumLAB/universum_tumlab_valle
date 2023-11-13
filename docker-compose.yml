@@ -4,7 +4,7 @@ services:
     image: liderbackend/uv_front:4.0.9
     restart: always
     env_file:
-      - .env_si
+      - example.env_si
     ports:
       - "3003:3003"
     extra_hosts:
@@ -13,7 +13,7 @@ services:
     image: liderbackend/uv_backend:3.0.6
     restart: always
     env_file:
-      - .env_api
+      - example.env_api
     extra_hosts:
       - 'host.docker.internal:host-gateway'
       - 'tumlab.local:192.168.4.1'
@@ -25,7 +25,7 @@ services:
     image: liderbackend/uv_sync:2.0.4
     restart: always
     env_file:
-      - .env_sync
+      - example.env_sync
     extra_hosts:
       - 'host.docker.internal:host-gateway'
       - 'tumlab.local:192.168.4.1'
