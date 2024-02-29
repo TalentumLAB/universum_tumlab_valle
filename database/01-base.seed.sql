@@ -1,4 +1,4 @@
-USE `dev_uv2`;
+USE `tumlab_uv2`;
 START TRANSACTION;
 SET FOREIGN_KEY_CHECKS=0;
 

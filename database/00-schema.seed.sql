@@ -1,6 +1,6 @@
 SET FOREIGN_KEY_CHECKS=0;
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-USE `dev_uv2`;
+USE `tumlab_uv2`;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
