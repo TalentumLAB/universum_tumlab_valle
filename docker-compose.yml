@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   uv-front:
-    image: talentumfront/uv_front:2.0.1
+    image: talentumfront/uv_front:2.0.2
     restart: always
     env_file:
       - .env_si
