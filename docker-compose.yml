@@ -10,7 +10,7 @@ services:
     extra_hosts:
       - 'tumlab.local:192.168.4.1'
   uv-backend:
-    image: talentumfront/uv_backend:2.0.0
+    image: talentumfront/uv_backend:2.0.1
     restart: always
     env_file:
       - .env_api
