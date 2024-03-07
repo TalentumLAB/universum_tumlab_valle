@@ -7,30 +7,15 @@ services:
       - .env_si
     ports:
       - "3003:3003"
-    extra_hosts:
-      - 'tumlab.local:192.168.4.1'
   uv-backend:
-    image: talentumfront/uv_backend:2.0.1
+    image: talentumfront/uv_backend:2.0.2
     restart: always
     env_file:
       - .env_api
     extra_hosts:
       - 'host.docker.internal:host-gateway'
-      - 'tumlab.local:192.168.4.1'
     ports:
       - "3001:3001"
-    networks:
-      - uv-network
-  uv-sync:
-    image: liderbackend/uv_sync:2.0.4
-    restart: always
-    env_file:
-      - .env_sync
-    extra_hosts:
-      - 'host.docker.internal:host-gateway'
-      - 'tumlab.local:192.168.4.1'
-    ports:
-      - "3002:3002"
     networks:
       - uv-network
   minio:
