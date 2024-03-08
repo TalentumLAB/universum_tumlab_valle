@@ -1395,7 +1395,7 @@ INSERT INTO `items` (`id`, `name`, `snip`, `value`, `properties`, `category_id`)
 (30, 'Maiz', 'corn_gather', 350, NULL, 1);
 
 INSERT INTO `licenses` (`id`, `serial`, `owner`, `expired_date`, `tumlab_name`) VALUES
-('d8c3b676-782f-11ee-8f83-2cf05d8dbc0d', 'serialadminuv', 999999, '2030-10-31', 'admintumlab');
+('d8c3b676-782f-11ee-8f83-2cf05d8dbc0d', 'serialadminuv', 1000, '2030-10-31', 'admintumlab');
 
 INSERT INTO `profiles` (`id`, `name`, `lastname`, `gender`, `birth`, `disability`) VALUES
 ('188c23ff-66be-11ee-8cc1-7085c296afc1', 'Universum', 'Admin', 'M', NULL, NULL);
@@ -1413,7 +1413,7 @@ INSERT INTO `towns` (`id`, `name`, `dane_code`, `department_id`) VALUES
 (40, 'LA VICTORIA', '403', 1), (41, 'ANDALUCIA', '36', 1), (42, 'SAN PEDRO', '670', 1), (43, 'CALIMA EL DARIEN', '126', 1);
 
 INSERT INTO `users` (`id`, `keycloak_sub_id`, `username`, `email`, `password`, `active`, `activation_token`, `reset_password_token`, `pic_pass`, `first_login`, `first_select_avatar`, `created_on`, `profile_id`, `role`) VALUES
-(999999, '', 'uvadmin2023', 'uvadmin2023@yopmail.com', '$2a$10$GzbhDlhIsiM/F6ptBBYlrO0GMxNljT9z4VmLsH5YsAW6it/.BblxS', 1, NULL, NULL, 0, 0, 0, '2023-10-01 10:04:10.069000', '188c23ff-66be-11ee-8cc1-7085c296afc1', 'admin');
+(1000, '', 'uvadmin2023', 'uvadmin2023@yopmail.com', '$2a$10$GzbhDlhIsiM/F6ptBBYlrO0GMxNljT9z4VmLsH5YsAW6it/.BblxS', 1, NULL, NULL, 0, 0, 0, '2023-10-01 10:04:10.069000', '188c23ff-66be-11ee-8cc1-7085c296afc1', 'admin');
 
 SET FOREIGN_KEY_CHECKS=1;
 COMMIT;
