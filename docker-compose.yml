@@ -5,6 +5,9 @@ services:
     restart: always
     env_file:
       - .env_si
+    extra_hosts:
+      - "host.docker.internal:host-gateway"		
+      - "tumlab.local:192.168.4.1"
     ports:
       - "3003:3003"
   uv-backend:
@@ -14,6 +17,7 @@ services:
       - .env_api
     extra_hosts:
       - 'host.docker.internal:host-gateway'
+      - "tumlab.local:192.168.4.1"
     ports:
       - "3001:3001"
     networks:
